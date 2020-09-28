@@ -29,6 +29,7 @@ header{
 }
 .menu__item{
     margin: 0 2.5rem;
+    z-index: 2;
 }
 .menu__link{
     text-decoration: none;
@@ -41,3 +42,111 @@ header{
 .menu__link:hover{
     color: var(--primary-color);
 }
+.header__content{
+    display: flex;
+    flex-direction: column;
+    padding-top: 19rem;
+    max-width: 55.5rem;
+}
+.header__content-top{
+    display: flex;
+    flex-direction: column;
+}
+.header__content-slogan{
+    font-size: 2rem;
+    color: var(--primary-color);
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+}
+.header__content-title{
+    font-size: 6rem;
+    font-weight: 400;
+    font-family: var(--secondary-font);
+    margin-bottom: 3rem;
+    color: var(--gray-dark);
+}
+.header__content-desc{
+    font-size: 1.5rem;
+    color: var(--gray-dark);
+    margin-bottom: 5rem;
+}
+.header__content-cta{
+    display: flex;
+    align-items: center;
+}
+.header__content-cta > a:first-child{
+    margin-right: 5rem;
+}
+.btn__play-video{
+    display: flex;
+    align-items: center;
+}
+.btn__play-video > i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 5rem;
+    background-color: var(--bg-block);
+    color: var(--primary-color);
+}
+.btn__play-video > span{
+    color: var(--gray-dark);
+    font-size: 1.5rem;
+}
+.btn{
+    padding: 1.5rem 3rem;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: white;
+    font-family: var(--primary-font);
+    border: 0;
+    outline: none;
+}
+.btn--primary{
+    background-color: var(--primary-color);
+}
+.btn--rounded{
+    border-radius: 5rem;
+}
+.btn--icon > i{
+    margin-left: 2rem;
+}
+.menu__collapse{
+    position: absolute;
+    font-size: 3rem;
+    top: 5rem;
+    right: 5rem;
+    color: var(--primary-color);
+    display: none;
+}
+@media screen and (max-width: 767px) {
+    .header__top {
+        justify-content: space-between;
+    }
+    .menu, .header__image{
+        display: none;
+    }
+    .menu__collapse{
+        display: block;
+    }
+    .header__content{
+        padding-top: 7rem;
+    }
+    .header__content-title{
+        font-size: 4rem;
+    }
+    .header__content-cta{
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .header__content-cta > a:first-child{
+        margin-right: 0;
+        margin-bottom: 2.5rem;
+    }
+}
+
