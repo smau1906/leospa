@@ -1,14 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-    <section class="about">
-        <div class="about__inner container">
+<html>
 
-        </div>
-    </section>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>toidicode.com</title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+<p>click vào <em>GET</em> để xem kết quả</p>
+<button onclick="getA()" >GET</button>
+<p id='result'></p>
+<script type="text/javascript">
+    function getA()
+    {
+        var title = document.title;
+        document.getElementById('result').innerText = title;
+    }
+</script>
 </body>
+
 </html>
